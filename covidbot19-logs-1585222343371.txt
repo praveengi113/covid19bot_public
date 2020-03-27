@@ -1,0 +1,49 @@
+2020-03-26T11:18:00.281858+00:00 app[worker.1]: 26/03/2020 16:47:59 --->  No Change
+2020-03-26T11:18:11.050054+00:00 app[worker.1]: 26/03/2020 16:48:10 --->  No Change
+2020-03-26T11:18:21.741711+00:00 app[worker.1]: 26/03/2020 16:48:21 --->  No Change
+2020-03-26T11:18:32.557943+00:00 app[worker.1]: 26/03/2020 16:48:31 --->  No Change
+2020-03-26T11:18:43.331991+00:00 app[worker.1]: 26/03/2020 16:48:42 --->  No Change
+2020-03-26T11:18:54.387058+00:00 app[worker.1]: 26/03/2020 16:48:53 --->  No Change
+2020-03-26T11:19:05.278994+00:00 app[worker.1]: 26/03/2020 16:49:04 --->  No Change
+2020-03-26T11:19:15.938166+00:00 app[worker.1]: 26/03/2020 16:49:15 --->  No Change
+2020-03-26T11:19:27.234234+00:00 app[worker.1]: 26/03/2020 16:49:25 --->  No Change
+2020-03-26T11:19:38.650497+00:00 app[worker.1]: 26/03/2020 16:49:37 --->  No Change
+2020-03-26T11:19:49.330799+00:00 app[worker.1]: 26/03/2020 16:49:48 --->  No Change
+2020-03-26T11:20:00.063723+00:00 app[worker.1]: 26/03/2020 16:49:59 --->  No Change
+2020-03-26T11:20:10.930108+00:00 app[worker.1]: 26/03/2020 16:50:10 --->  No Change
+2020-03-26T11:20:21.925933+00:00 app[worker.1]: 26/03/2020 16:50:20 --->  No Change
+2020-03-26T11:20:32.569353+00:00 app[worker.1]: 26/03/2020 16:50:31 --->  No Change
+2020-03-26T11:20:36.000000+00:00 app[api]: Build started by user praveenkumar.p113@gmail.com
+2020-03-26T11:20:43.506191+00:00 app[worker.1]: 26/03/2020 16:50:42 --->  No Change
+2020-03-26T11:20:54.341939+00:00 app[worker.1]: 26/03/2020 16:50:53 --->  No Change
+2020-03-26T11:21:05.370131+00:00 app[worker.1]: 26/03/2020 16:51:04 --->  No Change
+2020-03-26T11:21:11.017177+00:00 heroku[worker.1]: Restarting
+2020-03-26T11:21:11.020456+00:00 heroku[worker.1]: State changed from up to starting
+2020-03-26T11:21:12.153075+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2020-03-26T11:21:12.242928+00:00 heroku[worker.1]: Process exited with status 143
+2020-03-26T11:21:10.845089+00:00 app[api]: Deploy 8449ce97 by user praveenkumar.p113@gmail.com
+2020-03-26T11:21:10.845089+00:00 app[api]: Release v9 created by user praveenkumar.p113@gmail.com
+2020-03-26T11:21:15.268673+00:00 heroku[worker.1]: Starting process with command `python app.py`
+2020-03-26T11:21:15.854869+00:00 heroku[worker.1]: State changed from starting to up
+2020-03-26T11:21:19.000000+00:00 app[api]: Build succeeded
+2020-03-26T11:26:20.970909+00:00 app[worker.1]: 26/03/2020 16:56:19 --->  No Change
+2020-03-26T11:28:35.000000+00:00 app[api]: Build started by user praveenkumar.p113@gmail.com
+2020-03-26T11:29:12.263338+00:00 heroku[worker.1]: State changed from up to starting
+2020-03-26T11:29:12.249352+00:00 heroku[worker.1]: Restarting
+2020-03-26T11:29:13.254244+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2020-03-26T11:29:13.320334+00:00 heroku[worker.1]: Process exited with status 143
+2020-03-26T11:29:12.064873+00:00 app[api]: Deploy 950661e5 by user praveenkumar.p113@gmail.com
+2020-03-26T11:29:12.064873+00:00 app[api]: Release v10 created by user praveenkumar.p113@gmail.com
+2020-03-26T11:29:15.723868+00:00 heroku[worker.1]: Starting process with command `python app.py`
+2020-03-26T11:29:16.316434+00:00 heroku[worker.1]: State changed from starting to up
+2020-03-26T11:29:20.000000+00:00 app[api]: Build succeeded
+2020-03-26T11:31:09.000000+00:00 app[api]: Build started by user praveenkumar.p113@gmail.com
+2020-03-26T11:31:45.034570+00:00 heroku[worker.1]: Restarting
+2020-03-26T11:31:45.037962+00:00 heroku[worker.1]: State changed from up to starting
+2020-03-26T11:31:43.700149+00:00 app[api]: Deploy a18198f4 by user praveenkumar.p113@gmail.com
+2020-03-26T11:31:43.700149+00:00 app[api]: Release v11 created by user praveenkumar.p113@gmail.com
+2020-03-26T11:31:46.216014+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2020-03-26T11:31:46.315008+00:00 heroku[worker.1]: Process exited with status 143
+2020-03-26T11:31:48.223571+00:00 heroku[worker.1]: Starting process with command `python app.py`
+2020-03-26T11:31:48.878676+00:00 heroku[worker.1]: State changed from starting to up
+2020-03-26T11:31:52.000000+00:00 app[api]: Build succeeded
