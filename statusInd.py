@@ -37,10 +37,14 @@ class Status(object):
         }
 
     def status_old(self):
+        temp_list
         with open("src/data.json") as f:
             data = json.load(f)
-            temp = data['status'][:2]
-        return temp
+            temp = data['status']
+        for te in temp[-1]:
+            temp_list.append(temp[-1][te])
+            
+        return temp_list
 
     def status_check(self):
         temp = self.status_old()
