@@ -36,12 +36,19 @@ class Status(object):
             "time": self.time
         }
 
-    def status_check(self):
+    def status_old(self):
         with open("src/data.json") as f:
             data = json.load(f)
             temp = data['status']
-        temp = temp[-1]["cases"]
-        if int(temp) == int(self.scraper()[0]):
+        return temp
+
+    def status_check(self):
+        temp = self.status_old()
+        if int(temp[-1]["cases"]) == int(self.scraper()[0]):
+            return False
+        elif int(temp[-1]["cured"]) == int(self.scraper()[1]):
+            return False
+        elif int(temp[-1]["death"]) == int(self.scraper()[2]):
             return False
         else:
             return True
