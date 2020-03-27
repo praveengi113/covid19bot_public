@@ -37,7 +37,7 @@ class Status(object):
         }
 
     def status_old(self):
-        temp_list
+        temp_list = []
         with open("src/data.json") as f:
             data = json.load(f)
             temp = data['status']
