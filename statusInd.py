@@ -48,11 +48,11 @@ class Status(object):
 
     def status_check(self):
         temp = self.status_old()
-        if int(temp[-1]["cases"]) == int(self.scraper()[0]):
+        if int(temp[0]) == int(self.scraper()[0]):
             return False
-        elif int(temp[-1]["cured"]) == int(self.scraper()[1]):
+        elif int(temp[1]) == int(self.scraper()[1]):
             return False
-        elif int(temp[-1]["death"]) == int(self.scraper()[2]):
+        elif str(temp[2]) == str(self.scraper()[2]):
             return False
         else:
             return True
