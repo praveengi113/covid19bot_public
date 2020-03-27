@@ -36,12 +36,19 @@ class Status(object):
             "time": self.time
         }
 
-    def status_check(self):
+    def status_old(self):
         with open("src/data.json") as f:
             data = json.load(f)
-            temp = data['status']
-        temp = temp[-1]["cases"]
-        if int(temp) == int(self.scraper()[0]):
+            temp = data['status'][:2]
+        return temp
+
+    def status_check(self):
+        temp = self.status_old()
+        if int(temp[-1]["cases"]) == int(self.scraper()[0]):
+            return False
+        elif int(temp[-1]["cured"]) == int(self.scraper()[1]):
+            return False
+        elif int(temp[-1]["death"]) == int(self.scraper()[2]):
             return False
         else:
             return True
@@ -58,12 +65,13 @@ class Status(object):
             status_var.append(el)
         return status_var
 
-    def whatsapp(self, body, num):
+    def whatsapp(self, body):
         sid = "AC2f8aa150a9ea9a4397e8b247c2747c5d"
-        token = "ac3db843ff54606aacb81ddfbfe33d14"
+        token = "ef33aea941defb17a0ed37bd5690fc78"
 
         client = Client(sid, token)
         fr_num = "whatsapp:+14155238886"
-        to_num = "whatsapp:+91" + num
+        to_num = "whatsapp:+917418414006"
 
         client.messages.create(body=body, from_=fr_num, to=to_num)
+        

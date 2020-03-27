@@ -11,6 +11,9 @@ def covidBot():
     status_now = status.scraper()
     statusCheck = status.status_check()
 
+    console_log = " Time : {0} \n Old Record : {1} \n New Record : {2}".format(time, status.status_old(),
+                                                                               status.scraper())
+
     body = """Hi, This is COVID-19@IndBot
     This is a simple bot to notify about
     the COVID19 cases in India.
@@ -29,8 +32,8 @@ def covidBot():
     mess = body.format(time, status_now[0], status_now[1], status_now[2])
     if statusCheck:
         status.save_to_file()
-        status.whatsapp(mess, "7418414006")
-        status.whatsapp(mess, "9790040925")
+        print(console_log)
+        status.whatsapp(mess)
     else:
         print("{} --->  No Change".format(time))
 
