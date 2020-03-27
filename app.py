@@ -33,7 +33,7 @@ def covidBot():
     if statusCheck:
         status.save_to_file()
         print(console_log)
-        status.whatsapp(mess, "7418414006")
+        status.whatsapp(mess)
     else:
         print("{} --->  No Change".format(time))
 
