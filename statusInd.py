@@ -67,7 +67,7 @@ class Status(object):
 
     def whatsapp(self, body):
         sid = "AC2f8aa150a9ea9a4397e8b247c2747c5d"
-        token = "ac3db843ff54606aacb81ddfbfe33d14"
+        token = "ef33aea941defb17a0ed37bd5690fc78"
 
         client = Client(sid, token)
         fr_num = "whatsapp:+14155238886"
