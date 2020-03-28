@@ -70,12 +70,11 @@ class Status(object):
         return status_var
 
     def whatsapp(self, body):
-        sid = "AC2f8aa150a9ea9a4397e8b247c2747c5d"
-        token = "ef33aea941defb17a0ed37bd5690fc78"
+        sid = "YOUR_ACC-SID"
+        token = "YOUR_ACC_TOKEN"
 
         client = Client(sid, token)
         fr_num = "whatsapp:+14155238886"
-        to_num = "whatsapp:+917418414006"
-
+        to_num = "whatsapp:" + YOUR_NUMBER
         client.messages.create(body=body, from_=fr_num, to=to_num)
         
